@@ -1,0 +1,111 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px 40px;
+}
+.board-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  width: 70%;
+  padding: 0px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.board-entry {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+.board-entry-main {
+  display: flex;
+  padding: 10px 10px;
+  background-color: #1d3557;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.city-name {
+  width: 40%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #03071e;
+  text-align: left;
+}
+
+.city-name-main {
+  width: 40%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f1faee;
+  border-right: 3px solid #f1faee;
+}
+
+.city-aqi {
+  width: 40%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.city-aqi-main {
+  width: 40%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f1faee;
+  border-right: 3px solid #f1faee;
+}
+
+.last-updated {
+  width: 20%;
+  font-size: 12px;
+  text-align: right;
+}
+
+.last-updated-main {
+  width: 10%;
+  font-size: 12px;
+  color: #f1faee;
+}
+
+@media only screen and (max-width: 600px) {
+  .board-container {
+    width: 100%;
+  }
+  .board-entry {
+    padding: 5px 20px;
+    margin-bottom: 2px;
+  }
+  .board-entry-main {
+    padding: 5px 20px;
+  }
+
+  .city-name {
+    font-size: 13px;
+  }
+
+  .city-name-main {
+    font-size: 13px;
+    border-right: 2px solid #f1faee;
+  }
+
+  .city-aqi {
+    font-size: 13px;
+  }
+
+  .city-aqi-main {
+    font-size: 13px;
+    border-right: 2px solid #f1faee;
+  }
+
+  .last-updated {
+    width: 20%;
+    font-size: 8px;
+  }
+
+  .last-updated-main {
+    width: 20%;
+    font-size: 8px;
+  }
+}
